@@ -1,0 +1,36 @@
+/*URLの下線消去*/
+a {
+	text-decoration: none;
+}
+
+/*nav*/
+.main-nav {
+	display: flex;
+	font-size: 1.3rem;
+	margin-top: 25px;
+	list-style: none;
+}
+
+.main-nav li {
+	margin-left: 35px;
+}
+
+.margin-nav a {
+	color: #432;
+}
+
+.margin-nav a:hover {
+	color: #0bd;
+}
+
+/*header*/
+.page-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto;		/*画面の中央に配置される*/
+	padding: 0 4% 1%;
+}

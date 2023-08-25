@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!-- CSS読み込み --><!-- 追加部分 -->
+<!-- 参考URL:https://pointsandlines.jp/server-side/java/springboot-project-stylesheet-location(2023/8/23) -->
+<!-- 下記linkのtype="text/css"なくても動く。けど一応 -->
+<link rel="stylesheet"th:href="@{/css/top.css}" type="text/css">
+<title>「〇×クイズ」アプリ：Top画面</title>
+</head>
+<body>
+	<header class="page-header wrapper">
+	<h1>「○×クイズ」アプリ</h1>
+	<nav>
+		<!-- top、crud、一覧ページへ移行 --><!-- 追加 -->
+		<ul class="main-nav">
+			<li><a th:href="@{/quiz/top}">TOP</a></li>
+			<li><a th:href="@{/quiz/}">CRUD画面</a></li>
+			<li><a th:href="@{/quiz/quizlist}">クイズ一覧</a></li>
+		</ul>
+	</nav>
+	</header>
+
+	<div class="top-content wrapper">
+		<p>クイズに挑戦してみよう！"終了"を押すとスコアが表示されるよ。</p>
+		<!-- Play画面へ移行 -->
+		<h2><a th:href="@{/quiz/play}" class="button">プレイ</a><br></h2>
+	</div>
+
+
+</body>
+</html>
